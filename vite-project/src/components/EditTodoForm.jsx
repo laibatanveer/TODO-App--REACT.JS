@@ -10,15 +10,15 @@ export default function EditTodoForm({ editTodo, task }) {
   };
 
   return (
-    <form className="TodoForm" onSubmit={handleSubmit}>
+    <form className="TodoForm rounded shadow p-3" onSubmit={handleSubmit}>
       <input
         type="text"
-        className="todo-input"
+        className="todo-input rounded shadow"
         value={value}
         placeholder="Edit Task"
         onChange={(e) => setValue(e.target.value)}
       />
-      <button type="submit" className="btn btn-primary">
+      <button type="submit" className="btn btn-dark">
         Update Task
       </button>
     </form>

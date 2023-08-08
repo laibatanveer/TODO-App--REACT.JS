@@ -10,15 +10,15 @@ export default function TodoForm({ addTodo }) {
   };
 
   return (
-    <form className="TodoForm" onSubmit={handleSubmit}>
-      <input
+    <form className="TodoForm rounded shadow p-3" onSubmit={handleSubmit}>
+      <input 
         type="text"
-        className="todo-input"
+        className="todo-input rounded shadow"
         value={value}
         placeholder="What is the task today?"
         onChange={(e) => setValue(e.target.value)}
       />
-      <button type="submit" className="btn btn-primary">
+      <button type="submit" className="btn rounded btn-dark">
         Add Task
       </button>
     </form>
